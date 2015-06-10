@@ -12,8 +12,8 @@ NSString* musicBaseURL = @"http://api.content.mts.intech-global.com/public/marke
 
 static MusicAPI* musicAPIptr;
 
-NSInteger HttpRequestUntilDataTimeout = 5;
-NSInteger HttpRequestTimeout = 10;
+NSInteger HttpRequestUntilDataTimeout = 15;
+NSInteger HttpRequestTimeout = 30;
 
 @implementation MusicAPI
 

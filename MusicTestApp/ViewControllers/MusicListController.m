@@ -101,6 +101,7 @@
                 }
 
                 [weakSelf.table reloadData];
+                [weakSelf.table finishInfiniteScroll];
             }
             loadMusicTask = nil;
         }];

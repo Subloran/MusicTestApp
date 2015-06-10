@@ -20,6 +20,8 @@
 		ACE1FD2F1B2839F200C0E1FB /* MusicAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE1FD2E1B2839F200C0E1FB /* MusicAPI.m */; };
 		ACE1FD351B283F4400C0E1FB /* APIResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE1FD341B283F4400C0E1FB /* APIResponse.m */; };
 		ACE1FD381B28457200C0E1FB /* MusicDataList.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE1FD371B28457200C0E1FB /* MusicDataList.m */; };
+		ACF7A5281B28A5480021C0F0 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF7A5261B28A5480021C0F0 /* PlayerViewController.m */; };
+		ACF7A5291B28A5480021C0F0 /* PlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACF7A5271B28A5480021C0F0 /* PlayerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,9 @@
 		ACE1FD341B283F4400C0E1FB /* APIResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIResponse.m; sourceTree = "<group>"; };
 		ACE1FD361B28457200C0E1FB /* MusicDataList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicDataList.h; sourceTree = "<group>"; };
 		ACE1FD371B28457200C0E1FB /* MusicDataList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicDataList.m; sourceTree = "<group>"; };
+		ACF7A5251B28A5480021C0F0 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		ACF7A5261B28A5480021C0F0 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		ACF7A5271B28A5480021C0F0 /* PlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +135,9 @@
 				ACE1FD1E1B2832B600C0E1FB /* MusicListController.h */,
 				ACE1FD1F1B2832B600C0E1FB /* MusicListController.m */,
 				ACE1FD201B2832B600C0E1FB /* MusicListController.xib */,
+				ACF7A5251B28A5480021C0F0 /* PlayerViewController.h */,
+				ACF7A5261B28A5480021C0F0 /* PlayerViewController.m */,
+				ACF7A5271B28A5480021C0F0 /* PlayerViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -223,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACE1FD071B282CED00C0E1FB /* LaunchScreen.xib in Resources */,
+				ACF7A5291B28A5480021C0F0 /* PlayerViewController.xib in Resources */,
 				ACE1FD041B282CED00C0E1FB /* Images.xcassets in Resources */,
 				ACE1FD221B2832B600C0E1FB /* MusicListController.xib in Resources */,
 				ACE1FD281B2833EB00C0E1FB /* MusicTableViewCell.xib in Resources */,
@@ -277,6 +286,7 @@
 				ACE1FD211B2832B600C0E1FB /* MusicListController.m in Sources */,
 				ACE1FD2F1B2839F200C0E1FB /* MusicAPI.m in Sources */,
 				ACE1FD271B2833EB00C0E1FB /* MusicTableViewCell.m in Sources */,
+				ACF7A5281B28A5480021C0F0 /* PlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

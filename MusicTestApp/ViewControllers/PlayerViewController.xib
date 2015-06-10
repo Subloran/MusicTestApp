@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PlayerViewController">
+            <connections>
+                <outlet property="artist" destination="Ij7-Ah-dCd" id="QVY-Ho-zPw"/>
+                <outlet property="cover" destination="y0w-wB-UAl" id="FlZ-CB-Ab9"/>
+                <outlet property="playbackControl" destination="34j-Ck-ddT" id="svo-iJ-A6L"/>
+                <outlet property="progressIndicator" destination="FeR-cA-7Bb" id="HGM-v9-JCs"/>
+                <outlet property="song" destination="DnG-WL-PoB" id="rjH-wG-hou"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y0w-wB-UAl">
+                    <rect key="frame" x="93.5" y="30" width="413" height="381.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="y0w-wB-UAl" secondAttribute="height" multiplier="226:209" id="FtU-FP-KC9"/>
+                    </constraints>
+                </imageView>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FeR-cA-7Bb">
+                    <rect key="frame" x="30" y="525" width="540" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="J3f-mt-Nn0"/>
+                    </constraints>
+                </progressView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="artist" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ij7-Ah-dCd">
+                    <rect key="frame" x="279" y="441" width="38.5" height="20.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20.5" id="j5b-Gn-4y6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="song" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DnG-WL-PoB">
+                    <rect key="frame" x="279" y="472" width="42" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="4Pz-QQ-n1A"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="34j-Ck-ddT">
+                    <rect key="frame" x="221" y="542" width="158" height="29"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="TI2-pF-oKM"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Play"/>
+                        <segment title="Pause"/>
+                        <segment title="Stop"/>
+                    </segments>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="playbackControlChanged:" destination="-1" eventType="valueChanged" id="lff-y9-4sr"/>
+                    </connections>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="34j-Ck-ddT" secondAttribute="centerX" id="8rd-l8-7cH"/>
+                <constraint firstItem="DnG-WL-PoB" firstAttribute="leading" secondItem="Ij7-Ah-dCd" secondAttribute="leading" id="Eu5-l9-M57"/>
+                <constraint firstAttribute="trailing" secondItem="FeR-cA-7Bb" secondAttribute="trailing" constant="30" id="JAr-84-zD2"/>
+                <constraint firstAttribute="centerX" secondItem="DnG-WL-PoB" secondAttribute="centerX" id="JPa-ZB-GYC"/>
+                <constraint firstItem="DnG-WL-PoB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="Lh3-KQ-iBw"/>
+                <constraint firstItem="FeR-cA-7Bb" firstAttribute="top" secondItem="DnG-WL-PoB" secondAttribute="bottom" constant="30" id="OhI-MU-t8W"/>
+                <constraint firstItem="Ij7-Ah-dCd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="QFY-tj-gwU"/>
+                <constraint firstItem="DnG-WL-PoB" firstAttribute="top" secondItem="Ij7-Ah-dCd" secondAttribute="bottom" constant="10" id="WSb-wa-cIP"/>
+                <constraint firstAttribute="centerX" secondItem="y0w-wB-UAl" secondAttribute="centerX" id="a4t-Hw-7G5"/>
+                <constraint firstItem="Ij7-Ah-dCd" firstAttribute="top" secondItem="y0w-wB-UAl" secondAttribute="bottom" constant="30" id="aPC-2H-uhN"/>
+                <constraint firstItem="34j-Ck-ddT" firstAttribute="top" secondItem="FeR-cA-7Bb" secondAttribute="bottom" constant="15" id="agU-VE-VbM"/>
+                <constraint firstItem="FeR-cA-7Bb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="fhE-GF-Ouy"/>
+                <constraint firstItem="y0w-wB-UAl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="h8a-gB-XNq"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ij7-Ah-dCd" secondAttribute="trailing" constant="30" id="lg9-lb-W41"/>
+                <constraint firstAttribute="bottom" secondItem="34j-Ck-ddT" secondAttribute="bottom" constant="30" id="qpU-Mi-Nrd"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DnG-WL-PoB" secondAttribute="trailing" constant="30" id="u5F-Rl-AxO"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

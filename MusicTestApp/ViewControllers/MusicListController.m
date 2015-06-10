@@ -6,18 +6,25 @@
 //  Copyright (c) 2015 Artem. All rights reserved.
 //
 
+#import <UIScrollView+InfiniteScroll.h>
 #import "MusicListController.h"
 #import "MusicTableViewCell.h"
 #import "MusicAPI.h"
-#import <UIScrollView+InfiniteScroll.h>
 
 @implementation MusicListController
 
 @synthesize table;
 
+- (NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.title = @"Music player";
+    self.navigationItem.title = self.title;
     [table registerNib:[UINib nibWithNibName:@"MusicTableViewCell" bundle:nil] forCellReuseIdentifier:@"musicCell"];
     perPage = 20;
     currentLastIndex = 0;
@@ -53,6 +60,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    PlayerViewController* playerController = [[PlayerViewController alloc] init];
+    playerController.delegate = self;
+    playerController.dataSource = self;
+    playerController.trackIndex = indexPath.row;
+    [self.navigationController pushViewController:playerController animated:YES];
 }
 
 #pragma mark - UITableViewDataSource
@@ -106,6 +118,16 @@
             loadMusicTask = nil;
         }];
     }
+}
+
+#pragma mark - PlayerViewControllerDataSource
+
+- (MusicObject*)musicObjectForIndex:(NSInteger)index
+{
+    if (index < musicDataList.dataList.count)
+        return musicDataList.dataList[index];
+    else
+        return nil;
 }
 
 @end

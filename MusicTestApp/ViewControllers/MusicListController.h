@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "MusicDataList.h"
+#import "PlayerViewController.h"
 
-@interface MusicListController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface MusicListController : UIViewController <UITableViewDataSource, UITableViewDelegate, PlayerViewControllerDelegate, PlayerViewControllerDataSource>
 {
     MusicDataList* musicDataList;
     NSInteger currentLastIndex;

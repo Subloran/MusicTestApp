@@ -13,8 +13,10 @@
 + (MusicObject*)objectWithJSON:(NSDictionary*)json
 {
     MusicObject* object = [[MusicObject alloc] init];
+    object.ID = json[@"id"];
     object.title = json[@"title"];
     object.picUrl = [NSURL URLWithString:json[@"picUrl"]];
+    object.demoUrl = [NSURL URLWithString:json[@"demoUrl"]];
     object.artist = json[@"artist"];
     return object;
 }

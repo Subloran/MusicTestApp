@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7F41B7C1947F45BEE7F16977"
+               BlueprintIdentifier = "256870799AC46F5C8078E08A"
                BuildableName = "libPods-MusicTestApp-SDWebImage-ProgressView.a"
                BlueprintName = "Pods-MusicTestApp-SDWebImage-ProgressView"
                ReferencedContainer = "container:Pods.xcodeproj">

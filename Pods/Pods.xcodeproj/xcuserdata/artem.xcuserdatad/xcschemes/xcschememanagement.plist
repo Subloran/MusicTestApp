@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-MusicTestApp-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MusicTestApp-SDWebImage-ProgressView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MusicTestApp-SDWebImage.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MusicTestApp-UIScrollView-InfiniteScroll.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-MusicTestApp.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>2D15AFD665E170F35FC652E3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>47693DE59AA8BC3A93681130</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7F41B7C1947F45BEE7F16977</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>857207DFC76D63A60E645E89</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DC060057F6C8DC7929CDE42E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
